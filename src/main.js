@@ -47,7 +47,7 @@ function main() {
   var program = createProgram(gl, vertexShader, fragmentShader);
 
   // look up where the vertex data needs to go.
-  var positionAttributeLocation = gl.getAttribLocation(program, "a_position");
+  var positionAttributeLocation = gl.getAttribLocation(program, "i_pos4");
 
   // Create a buffer and put three 2d clip space points in it
   var positionBuffer = gl.createBuffer();
