@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  canvas {
+    margin: 0 auto;
+	width: min(100vh, 100vw);
+    height: min(100vh, 100vw);
+    display: block;
+  }
+  embed {
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  </style>
+  <script src="lib/webgl-utils.js"></script>
+  <script src="src/shaders/vertex.vs"></script>
+  <script src="src/shaders/fragment.fs"></script>
+  <script src="src/main.js" defer></script>
+</head>
+<body>
+  <canvas id="main"></canvas>
+</body>
+</html>
